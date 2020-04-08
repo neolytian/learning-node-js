@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": " ./docker-script.sh && sleep 5 && nyc--reporter = html--reporter = text mocha--package. / package.json--recursive || true "
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +27,10 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
-    "babel-watch": "^7.0.0"
+    "babel-watch": "^7.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
+    "sinon": "^9.0.1"
   }
 }
